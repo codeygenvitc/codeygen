@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Code-Y-Gen | Inspiring a young Gen of Programmers</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@700&display=swap" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" 
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./assets/jquery.min.js"></script>
+    <!-- FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF -->
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet" />
+    <!-- FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF -->
+<!--     <link rel="apple-touch-icon" sizes="57x57" href="./res/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./res/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./res/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./res/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./res/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./res/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./res/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./res/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./res/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./res/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./res/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./res/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./res/favicon-16x16.png">
+    <link rel="manifest" href="./res/manifest.json"> -->
+    <link rel="icon" type="image/png" sizes="96x96" href="./res/favi.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <div id="maincont">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark light" style="padding: 15px">
+        <div class="container-fluid">
+            <img src="res/logo_size.jpg" alt="" id="web-logo" class="logo" />
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#events" id="navbarScrollingDropdown" role="button" aria-expanded="false">
+                            <!-- <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> -->
+                            Events
+                        </a>
+                        <!-- <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </li>
+                        </ul> -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="New.html" tabindex="-1" aria-disabled="true">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" onclick="Call();" href="javascript:void(0);" id="reslink" tabindex="-1" aria-disabled="true">Members</a>
+                        <!--a  href="members.html" tabindex="-1" aria-disabled="true"-->
+                    </li>
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    
+    <div class="banner">
+      <!-- ------------------------------------------- scroll top -->
+      <a
+        class="top"
+        id="mybt"
+        style="
+          font-size: 30px;
+          text-decoration: none;
+          color: red;
+          background-color: black;
+          position: fixed;
+          right: 5%;
+          bottom: 5%;
+          display: inline;
+          z-index: -1;
+          border: 2px solid whitesmoke;
+          border-radius: 50px;
+          padding: 2px 18px;
+        "
+        title="Go Above"
+        href="#up"
+        >^</a
+      >
+      <!-- --------------------------------------------scroll top -->
+      <div class="container-overall">
+        <div
+          class="sec"
+          style="
+            height: 90vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+          "
+        >
+          <img
+            width="300px"
+            src="https://media.giphy.com/media/lnaoFgGrDHnivdu5Bc/giphy.gif"
+            alt="" id="up"
+          />
+
+          <h1 style="color: #ffe143">WELCOME &nbsp;TO</h1>
+          <a href="#gene" style="cursor: pointer; z-index: 2">
+            <img
+              src="https://media.giphy.com/media/UrzWDQ3VTiDU84R5dx/giphy.gif"
+              width="50px"
+              alt="gif"
+            />
+          </a>
+            </div>
+            <div class="sec">
+                <!-- <h1></h1> -->
+            </div>
+            <div class="sec">
+                <!-- <h1></h1> -->
+            </div>
+            <div class="sec">
+                <!-- <h1></h1> -->
+            </div>
+            <!-- <div class="sec"> -->
+            <!-- <h1></h1> -->
+            <!-- </div> -->
+            <div class="content1">
+                <h2>
+                    <!-- <span style="--i: 1">LOVE &nbsp;</span> -->
+                    <!-- <span style="--i: 1">LOVE &nbsp;</span> -->
+                    <!-- <span style="--i: 1"><img src="https://media.giphy.com/media/LpvRzoMpaL4FZkdXzM/giphy.gif"  width="300px" alt=""> &nbsp;</span> -->
+                    <span style="--i: 1">CODE</span>
+                    <span style="--i: 2; color: #00ffd6">-{Y}-</span>
+                    <span style="--i: 3" id="gene">GEN</span>
+                </h2>
+            </div>
+
+            <div class="waveSection" id="about">
+
+                <div class="contentInWave">
+
+                    <h2>About Us</h2>
+                    <p>Code Y Gen is one of the most prestigious clubs in VITCC with many active members where the students can accelerate their passion for technology and creation. It is a place where creative minds and ideas are harnessed into software
+                        products that are useful in real life. We aim to think up novel algorithms and turn them into innovative software in different fields.</p>
+                </div>
+                <img src="https://media.giphy.com/media/lr1QZ7prMwwkqSSVLa/giphy.gif" alt="">
+                <svg class="Wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,160L30,170.7C60,181,120,203,180,224C240,245,300,267,360,266.7C420,267,480,245,540,224C600,203,660,181,720,197.3C780,213,840,267,900,288C960,309,1020,299,1080,261.3C1140,224,1200,160,1260,133.3C1320,107,1380,117,1410,122.7L1440,128L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path></svg>
+            </div>
+
+            <div class="vid-div">
+                <video autoplay loop muted>
+            <source src="res/S11.mp4" type="video/mp4" />
+          </video>
+                <div class="conte" style="background-color: rgba(0, 0, 0, 0.212); padding: 20px">
+                    <h1 style="color: chartreuse; text-align: center">
+                        Inspiring a Young Gen of programmers
+                    </h1>
+                    <hr style="background-color: whitesmoke;">
+                    <p style="color: whitesmoke;text-align: center;font-size: 25px;">
+                        Lot of Energy – Excitement – Innovation – Learning – Fun Guaranteed !!
+                    </p>
+                    <p style="font-size: 20px;color: whitesmoke;text-align: center;">Let your passion find YOU.</p>
+                </div>
+            </div>
+            <div class="events-section">
+                <h1 style="color: whitesmoke;" id="events">Our Upcoming Events...</h1>
+                <hr style="background-color: rgb(255, 208, 0);width: 40%;margin-bottom: 40px;height: 5px;border-radius: 20px;">
+                <div class="laptop">
+                    <img src="res/laptop.png" alt="">
+                    <iframe src="Events.html" frameborder="0"></iframe>
+                </div>
+
+            </div>
+            <div style="
+            background-image: url('https://images.unsplash.com/photo-1474540412665-1cdae210ae6b?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1062&q=80');
+            padding: 10px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+          ">
+                <h1 style="text-align: center">Club Members</h1>
+                <hr />
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente minus harum labore iusto, laudantium, aperiam hic illo repellat dolor minima qui! Quisquam in laudantium excepturi illum eligendi, facere molestias quae!
+                </p>
+                <div style="
+              display: flex;
+              flex-wrap: wrap;
+              align-items: center;
+              justify-content: center;
+              background-color: rgba(0, 0, 0, 0.5);
+              border-radius: 20px;
+              padding: 20px;
+            ">
+                    <div class="image-cont">
+                        <div class="image">
+                            <img class="imag" src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8aHVtYW58ZW58MHx8MHw%3D&ixlib=rb-1.2.1&w=1000&q=80" alt="" />
+                        </div>
+                        <div class="title">
+                            <h2>Name</h2>
+                        </div>
+                    </div>
+                    <div class="image-cont">
+                        <div class="image">
+                            <img class="imag" src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8aHVtYW58ZW58MHx8MHw%3D&ixlib=rb-1.2.1&w=1000&q=80" alt="" />
+                        </div>
+                        <div class="title">
+                            <h2>Name</h2>
+                        </div>
+                    </div>
+                    <div class="image-cont">
+                        <div class="image">
+                            <img class="imag" src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8aHVtYW58ZW58MHx8MHw%3D&ixlib=rb-1.2.1&w=1000&q=80" alt="" />
+                        </div>
+                        <div class="title">
+                            <h2>Name</h2>
+                        </div>
+                    </div>
+                    <div class="image-cont">
+                        <div class="image">
+                            <img class="imag" src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8aHVtYW58ZW58MHx8MHw%3D&ixlib=rb-1.2.1&w=1000&q=80" alt="" />
+                        </div>
+                        <div class="title">
+                            <h2>Name</h2>
+                        </div>
+                    </div>
+                    <div class="image-cont">
+                        <div class="image">
+                            <img class="imag" src="res/my.jpeg" alt="" />
+                        </div>
+                        <div class="title">
+                            <h2>Name</h2>
+                        </div>
+                    </div>
+                    <div class="image-cont">
+                        <div class="image">
+                            <img class="imag" src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8aHVtYW58ZW58MHx8MHw%3D&ixlib=rb-1.2.1&w=1000&q=80" alt="" />
+                        </div>
+                        <div class="title">
+                            <h2>Name</h2>
+                        </div>
+                    </div>
+                    <div class="image-cont">
+                        <div class="image">
+                            <img class="imag" src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8aHVtYW58ZW58MHx8MHw%3D&ixlib=rb-1.2.1&w=1000&q=80" alt="" />
+                        </div>
+                        <div class="title">
+                            <h2>Name</h2>
+                        </div>
+                    </div>
+                    <div class="image-cont">
+                        <div class="image">
+                            <img class="imag" src="https://i2.wp.com/joshbersin.com/wp-content/uploads/2021/01/shutterstock_1302585136.jpg?resize=520%2C245&ssl=1" alt="" />
+                        </div>
+                        <div class="title">
+                            <h2>Name</h2>
+                        </div>
+                    </div>
+                    <div class="image-cont">
+                        <div class="image">
+                            <img class="imag" src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8aHVtYW58ZW58MHx8MHw%3D&ixlib=rb-1.2.1&w=1000&q=80" alt="" />
+                        </div>
+                        <div class="title">
+                            <h2>Name</h2>
+                        </div>
+                    </div>
+                    <div class="image-cont">
+                        <div class="image">
+                            <img class="imag" src="https://www.southernhealth.ca/assets/Join-Our-Team/_resampled/ResizedImageWzMyNyw0OTFd/employee-benefits.jpg" alt="" />
+                        </div>
+                        <div class="title">
+                            <h2>Name</h2>
+                        </div>
+                    </div>
+                    <div class="image-cont">
+                        <div class="image">
+                            <img class="imag" src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8aHVtYW58ZW58MHx8MHw%3D&ixlib=rb-1.2.1&w=1000&q=80" alt="" />
+                        </div>
+                        <div class="title">
+                            <h2>Name</h2>
+                        </div>
+                    </div>
+                    <div class="image-cont">
+                        <div class="image">
+                            <img class="imag" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4eb6xYeJu3K1BVtbvLRWBnxqlTQhe0nrYKA&usqp=CAU" alt="" />
+                        </div>
+                        <div class="title">
+                            <h2>Name</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <!-- <h3 style="color: whitesmoke;text-align: center;">Copyright &copy; 2021 Code-{y}-Gen Club</h3> -->
+                <!-- style="background-image: url('https://images.unsplash.com/photo-1516557070061-c3d1653fa646?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80');background-position: center;background-repeat: no-repeat;background-size: cover;" -->
+                <div>
+                    <div style="
+                width: 100%;
+                height: 400px;
+                padding: 20px;
+                border: 2px solid whitesmoke;
+                border-radius: 10px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+              ">
+                        <img src="res/logo_size.jpg" style="filter: invert(100%); display: block" alt="" />
+                        <hr />
+                        <h3 style="color: whitesmoke">Contact us</h3>
+                        <h6 style="color: whitesmoke; text-align: center">
+                            <img src="https://img.icons8.com/ultraviolet/40/000000/email-open--v2.png" /><a href="" style="text-decoration: none">&nbsp; vitcodeygen@gmail.com</a
+                >
+              </h6>
+
+              <div id="cam">
+                <div id="but" class="butc">
+                  <h1 style="color: red">.</h1>
+                </div>
+                <a href="#" class="insta">
+                  <img
+                    class="insta-img"
+                    src="https://i.pinimg.com/originals/63/0b/dd/630bdd67724dd9bceb57ec85e767d8ac.png"
+                    width="100px"
+                    alt=""
+                  />
+                </a>
+                    </div>
+                </div>
+            </div>
+
+            <h3 style="
+              color: whitesmoke;
+              text-align: center;
+              margin-top: 20px;
+              padding: 20px;
+              background-color: #262626;
+            ">
+                Copyright &copy; 2021 Code-{y}-Gen Club
+            </h3>
+        </div>
+        </div>
+        </div>
+    </div>
+        <script>
+            function Call() {
+                const xhr = new XMLHttpRequest();
+                const c = document.getElementById('maincont');
+                
+                xhr.onload = function() {
+                    if(this.status === 200)
+                         c.innerHTML = xhr.responseText;
+                    else {
+                        console.warn('Did not receive 200 OK from response!');
+                    }
+                };
+                
+                xhr.open('get', 'members.html');
+                xhr.send();
+            }
+            
+            function Callfun()
+            {
+                const c = document.getElementById('maincont');
+                var rawFile = new XMLHttpRequest();
+                rawFile.open("GET", 'index.html', false);
+                rawFile.onreadystatechange = function ()
+                {
+                    if(rawFile.readyState === 4)
+                    {
+                        if(rawFile.status === 200 || rawFile.status == 0)
+                        {
+                            var allText = rawFile.responseText;
+                            c.innerHTML = rawFile.responseText;
+                            // alert(allText);
+                        }
+                    }
+                }
+                rawFile.send();
+            }
+        </script>
+</body>
+
+</html>

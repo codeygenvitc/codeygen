@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Code-Y-Gen | Inspiring a young Gen of Programmers</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@700&display=swap" rel="stylesheet" />
+    <script src="./assets/jquery.min.js"></script>
+    <!-- FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF -->
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" 
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF -->
+<!--     <link rel="apple-touch-icon" sizes="57x57" href="./res/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./res/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./res/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./res/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./res/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./res/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./res/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./res/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./res/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./res/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./res/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./res/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./res/favicon-16x16.png">
+    <link rel="manifest" href="./res/manifest.json"> -->
+    <link rel="icon" type="image/png" sizes="96x96" href="./res/favi.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <style>
+        .fa{
+            cursor: pointer;
+        }
+        .fa:hover{
+            color: brown;
+            transform:scale(1.3);
+        }
+        
+    </style>
+  <div id="maincont">
+  <nav class="navbar sticky-top navbar-expand-lg navbar-dark light" style="padding: 15px">
+    <div class="container-fluid">
+        <img src="res/logo_size.jpg" alt="" id="web-logo" class="logo" />
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px">
+                <li class="nav-item">
+                     <a class="nav-link" onclick="Callfun();" href="javascript:void(0);" id="reslink" tabindex="-1" aria-disabled="true">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="#events" id="navbarScrollingDropdown" role="button" aria-expanded="false">
+                        <!-- <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> -->
+                        Events
+                    </a>
+                    <!-- <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li>
+                            <hr class="dropdown-divider" />
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </li>
+                    </ul> -->
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="New.html" tabindex="-1" aria-disabled="true">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#" tabindex="-1" aria-disabled="true">Members</a>
+                </li>
+      </ul>
+      <form class="d-flex">
+        <input
+          class="form-control me-2"
+          type="search"
+          placeholder="Search"
+          aria-label="Search"
+        />
+        <button class="btn btn-outline-success" type="submit">
+          Search
+        </button>
+      </form>
+    </div>
+  </div>
+</nav>
+<div class="container p-5">
+  <div class="row row-cols-1 row-cols-xs-2 row-cols-sm-2 row-cols-lg-4 g-3">
+      <div class="col">
+          <div class="card h-100 shadow-sm">
+              <div class="text-center">
+     
+
+                  <div class="img-hover-zoom img-hover-zoom--colorize">
+                      <img class="shadow" src="https://source.unsplash.com/rDEOVtE7vOs/600x600"
+                          alt="Another Image zoom-on-hover effect">
+                  </div>
+
+              </div>
+     
+              <div class="card-body">
+                  <div class="clearfix mb-3">
+
+
+   
+
+                  </div>
+
+
+                  <div class="my-2 text-center">
+
+                      <h1>Karthik Vempati</h1>
+
+                  </div>
+                  <div class="mb-3">
+
+                      <h2 class="text-uppercase text-center role">Frontend Developer</h2>
+
+                  </div>
+                  <div class="box">
+                      <div>
+                          <ul class="list-inline">
+                              <li class="list-inline-item"><i style="font-size:30px" class="fa">&#xf09b;</i></li>
+                              <li class="list-inline-item"><i style="font-size:30px" class="fa">&#xf08c;</i></li>
+                              <li class="list-inline-item"><i style="font-size:30px" class="fa">&#xf16d;</i></li>
+                              <li class="list-inline-item"><i style="font-size:30px" class="fa">&#xf099;</i></li>
+                          </ul>
+
+                      </div>
+                  </div>
+
+  
+              </div>
+          </div>
+      </div>
+      <div class="col">
+          <div class="card h-100 shadow-sm">
+              <div class="text-center">
+         
+
+                  <div class="img-hover-zoom img-hover-zoom--colorize">
+                      <img class="shadow" src="https://source.unsplash.com/XHVpWcr5grQ/600x600"
+                          alt="Another Image zoom-on-hover effect">
+                  </div>
+
+              </div>
+         
+              <div class="card-body">
+                  <div class="clearfix mb-3">
+
+
+        
+
+                  </div>
+
+
+                  <div class="my-2 text-center">
+
+                      <h1>Vincent Vega</h1>
+
+                  </div>
+                  <div class="mb-3">
+
+                      <h2 class="text-uppercase text-center role">SEO Specialist</h2>
+                      <br>
+                  </div>
+                  <div class="box">
+                      <div>
+                          <ul class="list-inline">
+                            <li class="list-inline-item"><i style="font-size:30px" class="fa">&#xf09b;</i></li>
+                            <li class="list-inline-item"><i style="font-size:30px" class="fa">&#xf08c;</i></li>
+                            <li class="list-inline-item"><i style="font-size:30px" class="fa">&#xf16d;</i></li>
+                            <li class="list-inline-item"><i style="font-size:30px" class="fa">&#xf099;</i></li>
+                          </ul>
+
+                      </div>
+                  </div>
+
+               
+              </div>
+          </div>
+      </div>
+      <div class="col">
+          <div class="card h-100 shadow-sm">
+              <div class="text-center">
+           
+
+                  <div class="img-hover-zoom img-hover-zoom--colorize">
+                      <img class="shadow" src="https://source.unsplash.com/n4KewLKFOZw/600x600"
+                          alt="Another Image zoom-on-hover effect">
+                  </div>
+
+              </div>
+         
+              <div class="card-body">
+                  <div class="clearfix mb-3">
+
+
+
+                  </div>
+
+
+                  <div class="my-2 text-center">
+
+                      <h1>Mr. Wolf</h1>
+
+                  </div>
+                  <div class="mb-3">
+
+                      <h2 class="text-uppercase text-center role">DIGITAL MARKETING SPECIALIST</h2>
+
+                  </div>
+                  <div class="box">
+                      <div>
+                          <ul class="list-inline">
+                            <li class="list-inline-item"><i style="font-size:30px" class="fa">&#xf09b;</i></li>
+                            <li class="list-inline-item"><i style="font-size:30px" class="fa">&#xf08c;</i></li>
+                            <li class="list-inline-item"><i style="font-size:30px" class="fa">&#xf16d;</i></li>
+                            <li class="list-inline-item"><i style="font-size:30px" class="fa">&#xf099;</i></li>
+                          </ul>
+
+                      </div>
+                  </div>
+
+        
+              </div>
+          </div>
+      </div>
+      <div class="col">
+          <div class="card h-100 shadow-sm">
+              <div class="text-center">
+             
+
+                  <div class="img-hover-zoom img-hover-zoom--colorize">
+                      <img class="shadow" src="https://source.unsplash.com/B4TjXnI0Y2c/600x600"
+                          alt="Another Image zoom-on-hover effect">
+                  </div>
+
+              </div>
+           
+              <div class="card-body">
+                  <div class="clearfix mb-3">
+
+
+                  </div>
+
+
+                  <div class="my-2 text-center">
+
+                      <h1>O-Ren Ishii</h1>
+
+                  </div>
+                  <div class="mb-3">
+
+                      <h2 class="text-uppercase text-center role">Web Developer</h2>
+                      <br>
+                  </div>
+                  <div class="box">
+                      <div>
+                          <ul class="list-inline">
+                            <li class="list-inline-item"><i style="font-size:30px" class="fa">&#xf09b;</i></li>
+                            <li class="list-inline-item"><i style="font-size:30px" class="fa">&#xf08c;</i></li>
+                            <li class="list-inline-item"><i style="font-size:30px" class="fa">&#xf16d;</i></li>
+                            <li class="list-inline-item"><i style="font-size:30px" class="fa">&#xf099;</i></li>
+                          </ul>
+
+                      </div>
+                  </div>
+
+              
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+</div>
+<a href="#mem">View entire team</a>
+
+<br><br><br><br><br><br><br><br><br><br>
+<ul class="list-members">
+  <li class="member">
+    <div class="member-image">
+      <img src="https://fadzrinmadu.github.io/hosted-assets/team-section-design-using-html-and-css/1.png">
+    </div>
+    <div class="member-info">
+      <h3>Hazel Andrea</h3>
+      <p>Founder & CEO</p>
+      <div class="social-link">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-linkedin-in"></i>
+      </div>
+    </div>
+  </li>
+  <li class="member">
+    <div class="member-image">
+      <img src="https://fadzrinmadu.github.io/hosted-assets/team-section-design-using-html-and-css/2.png">
+    </div>
+    <div class="member-info">
+      <h3>Lucas Edward</h3>
+      <p>Product Manager</p>
+      <div class="social-link">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-linkedin-in"></i>
+      </div>
+    </div>
+  </li>
+  <li class="member">
+    <div class="member-image">
+      <img src="https://fadzrinmadu.github.io/hosted-assets/team-section-design-using-html-and-css/3.png">
+    </div>
+    <div class="member-info">
+      <h3>Ella Piper</h3>
+      <p>Marketing Head</p>
+      <div class="social-link">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-linkedin-in"></i>
+      </div>
+    </div>
+  </li>
+  <li class="member">
+    <div class="member-image">
+      <img src="https://fadzrinmadu.github.io/hosted-assets/team-section-design-using-html-and-css/4.png">
+    </div>
+    <div class="member-info">
+      <h3>Jaxon Mathew</h3>
+      <p>Affiliate Manager</p>
+      <div class="social-link">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-linkedin-in"></i>
+      </div>
+    </div>
+  </li>
+</ul>
+
+<!-- <div id="mem">
+<ul class="list-members">    
+    <li class="member">
+      <div class="member-image">
+        <img src="res/my.jpeg">
+      </div>
+      <div class="member-info">
+        <h3>Prashant Setia</h3>
+        <p></p>
+        <div class="social-link">
+          <i class="fa fa-facebook-f"></i>
+          <i class="fa fa-twitter"></i>
+          <i class="fa fa-linkedin-in"></i>
+        </div>
+      </div>
+    </li>
+    <li class="member">
+      <div class="member-image">
+        <img src="https://fadzrinmadu.github.io/hosted-assets/team-section-design-using-html-and-css/2.png">
+      </div>
+      <div class="member-info">
+        <h3>XYZ</h3>
+        <p></p>
+        <div class="social-link">
+          <i class="fa fa-facebook-f"></i>
+          <i class="fa fa-twitter"></i>
+          <i class="fa fa-linkedin-in"></i>
+        </div>
+      </div>
+    </li>
+    <li class="member">
+      <div class="member-image">
+        <img src="https://fadzrinmadu.github.io/hosted-assets/team-section-design-using-html-and-css/3.png">
+      </div>
+      <div class="member-info">
+        <h3 id="mem2">ABC</h3>
+        <p></p>
+        <div class="social-link">
+          <i class="fa  fa-facebook-f"></i>
+          <i class="fa  fa-twitter"></i>
+          <i class="fa  fa-linkedin-in"></i>
+        </div>
+      </div>
+    </li>
+    <li class="member">
+      <div class="member-image">
+        <img src="https://fadzrinmadu.github.io/hosted-assets/team-section-design-using-html-and-css/4.png">
+      </div>
+      <div class="member-info">
+        <h3>Michael</h3>
+        <p></p>
+        <div class="social-link">
+          <i class="fa fa-facebook-f"></i>
+          <i class="fa fa-twitter"></i>
+          <i class="fa fa-linkedin-in"></i>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+</div> -->
+<br><br><br><br><br><br>
+  <script>
+    //   function Callfun() {
+    //       console.log("hi");
+    //             const xhra = new XMLHttpRequest();
+    //             const ca = document.getElementById('maincont');
+            
+    //             xhra.onload = function() {
+    //                 if(this.status === 200){
+
+    //                     console.log(xhra.responseText);
+    //                     ca.innerHTML = xhra.responseText;
+    //                 }
+    //                 else {
+    //                     console.warn('Did not receive 200 OK from response!');
+    //                 }
+    //             };
+                
+    //             xhra.open('get', 'index.html');
+    //             xhra.send();
+    //         }
+
+            // console.log(xhr.responseText);
+
+            
+// function Callfun()
+// {
+//     const c = document.getElementById('maincont');
+//     var rawFile = new XMLHttpRequest();
+//     rawFile.open("GET", 'login.html', false);
+//     rawFile.onreadystatechange = function ()
+//     {
+//         if(rawFile.readyState === 4)
+//         {
+//             if(rawFile.status === 200 || rawFile.status == 0)
+//             {
+//                 var allText = rawFile.responseText;
+//                 c.innerHTML = rawFile.responseText;
+//                 // alert(allText);
+//             }
+//         }
+//     }
+//     rawFile.send();
+// }
+  </script>
+  </body>
+  </html>
