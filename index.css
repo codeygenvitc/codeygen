@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
 * {
+    -webkit-box-sizing: border-box;
     padding: 0%;
     margin: 0;
     box-sizing: border-box;
@@ -423,6 +424,10 @@ h1 {
     border-radius: 1rem;
 }
 
+.card-body{
+    height: 30vh;
+}
+
 .img-hover-zoom--colorize img {
     border-radius: 50%;
     width: 150px;
@@ -616,3 +621,43 @@ h1 {
       transform: translateY(-50%) rotateZ(180deg);
     }
   }
+
+
+  .members-bg{
+    background-image: url(https://images.unsplash.com/photo-1474540412665-1cdae210ae6b?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1062&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+  } 
+
+  /* members heading */
+  .members-heading{
+      text-align: center;
+      padding-top: 10px;
+      font-size: 30px;
+  }
+
+  .members-view{
+    text-align: center;
+    text-decoration: none;
+    padding-top: 40px;
+  }
+
+  .members-view button a{
+    text-decoration: none;
+    color: rgb(2, 105, 28);
+  }
+
+.members-view button{
+    border-radius: 20px;
+    height: 35px;
+    width: auto;
+    background-color: #838282;
+}
+
+.members-view button:hover{
+    border-radius: 20px;
+    height: 35px;
+    width: auto;
+    background-color: #fff;
+}
